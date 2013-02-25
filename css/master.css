@@ -65,7 +65,7 @@ a {
   color: #BD7938;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 240px) and (max-width: 420px) {
   .container {
     width: 320px;
   }
