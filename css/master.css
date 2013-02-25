@@ -1,0 +1,66 @@
+body {
+  background-color: #000000;
+
+  font: 400 1.2em/1.8em Georgia, Cambria, 'Times New Roman', Times, serif;
+  color: #AAAAAA;
+}
+
+.container {
+  margin: 20px auto;
+  width: 800px;
+}
+
+.container header {
+  padding: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #532700;
+}
+
+.container h1 {
+  width: 250px;
+  height: 64px;
+
+  float: left;
+
+  background: transparent url('/images/beanstalk.jpg') no-repeat top left;
+}
+
+.container h1 span {
+  display: none;
+}
+
+.contact {
+  float: right;
+  overflow: hidden;
+
+  width: 300px;
+
+  font-size: 0.8em;
+
+  list-style: none;
+}
+
+.contact li {
+  text-align: right;
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  border-top: 1px solid #532700;
+  padding: 20px 20px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.7em;
+  line-height: 1.4em;
+}
+
+a {
+  color: #BD7938;
+}
