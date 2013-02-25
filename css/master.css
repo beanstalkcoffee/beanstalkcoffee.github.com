@@ -65,13 +65,19 @@ a {
   color: #BD7938;
 }
 
-@media (min-width: 240px) and (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 568px) {
   .container {
-    width: 320px;
+    width: 100%;
   }
 
   .container h1 {
-    margin: 0 15px;
+    width: 100%;
+    background-position: top center;
+  }
+
+  .contact {
+    width: 100%;
+    clear: both;
   }
 
   .contact li {
@@ -91,7 +97,7 @@ a {
            (min-resolution: 1.3dppx) {
 
   .container h1 {
-    background: transparent url('/images/beanstalk@2x.jpg') no-repeat top left;
+    background: transparent url('/images/beanstalk@2x.jpg') no-repeat top center;
     background-size: 250px 64px;
   }
 }
