@@ -105,5 +105,5 @@ a {
 @font-face {
   font-family: amtype;
   src: url('/fonts/amtype.otf');
-       /*url('Sansation_Light.eot'); /* IE9+ */
+       url('/fonts/amtype.eot'); /* IE9+ */
 }
