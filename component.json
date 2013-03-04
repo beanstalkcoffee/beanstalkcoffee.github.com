@@ -5,6 +5,7 @@
     "flight": "~1.0",
     "jquery": "~1.8",
     "jquery.scrollTo": "~1.4",
-    "jquery.localScroll": "master"
+    "jquery.localScroll": "master",
+    "requirejs": "~2.1"
   }
 }
