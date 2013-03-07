@@ -71,6 +71,14 @@ body {
   float: left;
 }
 
+.nav li:before {
+  content: "/ "
+}
+
+.nav li:first-child:before {
+  content: ""
+}
+
 .content {
   padding: 20px;
 }
@@ -89,7 +97,7 @@ body {
 }
 
 .grid img {
-  width: 250px;
+  width: 150px;
   float: left;
 
   border-radius: 4px;
@@ -99,6 +107,12 @@ body {
   margin-left: 20px;
   width: 480px;
   float: left;
+  overflow: hidden;
+}
+
+.grid.full div {
+  margin-left: 0;
+  width: 100%;
 }
 
 .grid h3 {
@@ -142,8 +156,18 @@ a {
     width: 100%;
   }
 
-  .content section:first-child {
-    margin-top: 0;
+  .nav ul {
+    width: 100%;
+  }
+  .nav li {
+    width: 100%;
+    clear: both;
+
+    text-align: center;
+  }
+
+  .nav li:before {
+    content: "";
   }
 
   .contact {
@@ -155,23 +179,26 @@ a {
     text-align: center;
   }
 
+  .content section:first-child {
+    margin-top: 0;
+  }
+
   .content li:after {
     content: "/";
   }
 
-  .contact .nav {
-    clear: both;
+  .grid img {
+    margin: 20px auto;
+
+    float: none;
+    display: block;
   }
 
-  .nav ul {
+  .grid div {
+    margin: 0;
     width: 100%;
   }
-  .nav li {
-    width: 100%;
-    clear: both;
 
-    text-align: center;
-  }
   footer p {
     text-align: center;
   }
