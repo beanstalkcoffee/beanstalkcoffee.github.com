@@ -25,12 +25,17 @@
           +44 7854 895078
         </li>
       </ul>
+      <nav class="nav">
+        <ul>
+          <li><a href="#intro" title="Home">Beanstalk</a></li>
+          <li><a href="#suppliers" title="Suppliers">Suppliers</a></li>
+          <!-- <li><a href="#people" title="People">People</a></li> -->
+        </ul>
+      </nav>
     </header>
 
     <section class="content">
-      <article>
-        {{ content }}
-      </article>
+      {{ content }}
     </section>
 
     <footer>
@@ -48,6 +53,30 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+    </script>
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="components/es5-shim/es5-shim.js"></script>
+    <script src="components/es5-shim/es5-sham.js"></script>
+    <script src="components/requirejs/require.js"></script>
+    <script>
+      require(
+        [
+          'components/flight/lib/compose',
+          'components/flight/lib/registry',
+          'components/flight/lib/advice',
+          'components/flight/lib/logger',
+          'components/flight/tools/debug/debug'
+        ],
+
+        function(compose, registry, advice, withLogging, debug) {
+          debug.enable(true);
+          compose.mixin(registry, [advice.withAdvice, withLogging]);
+          require(['app/page'], function(initialize) {
+            initialize();
+          });
+        }
+      );
     </script>
   <div>
 </body>
