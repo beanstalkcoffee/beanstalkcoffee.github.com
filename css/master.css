@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #000000;
 
   font: 400 1.1em/1.6em "amtype", Georgia, Cambria, 'Times New Roman', Times, serif;
@@ -6,12 +8,17 @@ body {
 }
 
 .container {
-  margin: 20px auto;
+  margin: 0 auto;
   width: 800px;
 }
 
 .container header {
-  padding: 20px;
+  padding: 10px 20px;
+
+  position: fixed;
+  width: 800px;
+  background-color: #000000;
+
   overflow: hidden;
   border-bottom: 1px solid #532700;
 }
@@ -44,8 +51,77 @@ body {
   text-align: right;
 }
 
+.nav {
+  clear: both;
+}
+
+.nav ul {
+  margin: 0 10px 0 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  list-style: none;
+}
+
+.nav li {
+  margin: 0 10px 0 0;
+  padding: 0;
+
+  float: left;
+}
+
+.nav li:before {
+  content: "/ "
+}
+
+.nav li:first-child:before {
+  content: ""
+}
+
 .content {
   padding: 20px;
+}
+
+.content section {
+  margin-bottom: 80px;
+}
+
+.content section:first-child {
+  margin-top: 180px;
+}
+
+.grid {
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+.grid img {
+  width: 150px;
+  float: left;
+
+  border-radius: 4px;
+}
+
+.grid div  {
+  margin-left: 20px;
+  width: 480px;
+  float: left;
+  overflow: hidden;
+}
+
+.grid.full div {
+  margin-left: 0;
+  width: 100%;
+}
+
+.grid h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.grid p {
+  font-size: 90%;
 }
 
 footer {
@@ -75,6 +151,25 @@ a {
     background-position: top center;
   }
 
+  .container header {
+    position: static;
+    width: 100%;
+  }
+
+  .nav ul {
+    width: 100%;
+  }
+  .nav li {
+    width: 100%;
+    clear: both;
+
+    text-align: center;
+  }
+
+  .nav li:before {
+    content: "";
+  }
+
   .contact {
     width: 100%;
     clear: both;
@@ -82,6 +177,26 @@ a {
 
   .contact li {
     text-align: center;
+  }
+
+  .content section:first-child {
+    margin-top: 0;
+  }
+
+  .content li:after {
+    content: "/";
+  }
+
+  .grid img {
+    margin: 20px auto;
+
+    float: none;
+    display: block;
+  }
+
+  .grid div {
+    margin: 0;
+    width: 100%;
   }
 
   footer p {

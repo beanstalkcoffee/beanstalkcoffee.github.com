@@ -1,0 +1,11 @@
+{
+  "name": "Beanstalk Coffee",
+  "version": "0.1.0",
+  "dependencies": {
+    "flight": "~1.0",
+    "jquery": "~1.8",
+    "jquery.scrollTo": "~1.4",
+    "jquery.localScroll": "master",
+    "requirejs": "~2.1"
+  }
+}
