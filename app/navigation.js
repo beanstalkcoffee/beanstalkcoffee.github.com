@@ -22,7 +22,9 @@ define(
         };
 
         this.after('initialize', function() {
-          this.interceptClicks();
+          if (window.innerWidth > 568) {
+            this.interceptClicks();
+          }
         });
       }
     }
