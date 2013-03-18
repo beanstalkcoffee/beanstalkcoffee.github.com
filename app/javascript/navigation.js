@@ -8,9 +8,6 @@ define(
       return defineComponent(navigation);
 
       function navigation() {
-        this.defaultAttrs({
-        });
-
         this.interceptClicks = function() {
           this.on('click', this.clicker);
         };

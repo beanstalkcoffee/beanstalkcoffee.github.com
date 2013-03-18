@@ -5,79 +5,237 @@
   <meta name="description" content="Beanstalk provides the best possible coffee experience at events and outdoor locations across the UK.">
   <meta name="keywords" content="kaffeine, caffeine, square mile, cafe, deli, sandwich, luxury, lunch, gourmet coffee, gingerbread men, flat white, espresso, barista, coffee, london, uk, cafe, brew, london, barista championships, fresh">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
-  <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/app/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/app/css/master.css">
   <title>{{ page.title }}</title>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1><span<Beanstalk Coffee</span></h1>
-      <ul class="contact">
-        <li class="twitter">
+<body class="b-body">
+  <header id="beanstalk" class="b-header">
+    <nav class="b-nav">
+      <ul>
+        <li><a class="e-navlink" href="#intro" title="intro">intro</a></li>
+        <li><a class="e-navlink" href="#suppliers" title="suppliers">suppliers</a></li>
+        <li><a class="e-navlink" href="#people" title="people">people</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="b-page">
+    <section id="brand" class="b-section b-brand">
+      <h1><a href="http://beanstalkcoffee.co.uk" title="Beanstalk"><span>Beanstalk</span></a></h1>
+      <ul class="b-contact">
+        <li class="m-twitter">
           <a href="http://twitter.com/beanstalklondon" title="Twitter @beanstalklondon">@beanstalklondon</a>
         </li>
-        <li class="email">
+        <li class="m-email">
           <a href="mailto:beanstalkcoffee@live.com" title="Email">beanstalkcoffee@live.com</a>
         </li>
-        <li class="phone">
+        <li class="m-phone">
           +44 7854 895078
         </li>
       </ul>
-      <nav class="nav">
-        <ul>
-          <li><a href="#intro" title="Home">Beanstalk</a></li>
-          <li><a href="#suppliers" title="Suppliers">Suppliers</a></li>
-          <!-- <li><a href="#people" title="People">People</a></li> -->
-        </ul>
-      </nav>
-    </header>
-
-    <section class="content">
-      {{ content }}
     </section>
+    <section id="intro" class="b-section b-intro">
+      <article class="b-content">
+        <p>
+          Beanstalk provides the ultimate bespoke coffee experience at events and outdoor
+          locations across the UK.
+        </p>
+        <p>
+          For us, it's about serving directly traded speciality coffees with verve and
+          panache for your guests to savour and enjoy.
+        </p>
+        <p>
+          The delivery of great coffee comes down to people. The founder of Beanstalk
+          Shaun Young, is the UK Aeropress Champion and is accompanied by a selection
+          of the UK's best baristas who are the heart and soul of many of London's great
+          coffee bars.
+        </p>
+        <p>
+          Beanstalk operates a bespoke hand-crafted espresso bar where our ethos is
+          built on providing a unique coffee experience that matches the UK's leading
+          artisan cafes.
+        </p>
+        <p>
+          Working with our well sourced suppliers our philosophy is totally dedicated
+          to uncompromising quality.
+        </p>
+      </article>
+    </section>
+    <section id="suppliers" class="b-section b-suppliers">
+      <div class="b-content">
+        <h2 class="e-title">Suppliers</h2>
+        <p>
+          Beanstalk is built on providing the finest possible products. We as a company
+          are incredibly proud to work and sustain great relationships with our suppliers.
+        </p>
+        <article class="b-supplier">
+          <img class="logotype" src="/images/hasbean.png" alt="has bean">
+          <div>
+            <h3 class="e-title"><a href="http://www.hasbean.co.uk">Has Bean</a></h3>
+            <p>
+              Has Bean Coffee are a small speciality roastery focussed on sourcing
+              incredible coffee and roasting with great care to deliver the best
+              possible cup. Sourcing the majority of their coffees direct from
+              individual farmers their key values are honesty, provenance, freshness
+              and great flavour – they are proud to have their coffee brewed by some
+              of the most passionate and skilled coffee people in the world.
+            </p>
+          </div>
+        </article>
+        <article class="b-supplier">
+          <img class="logotype" src="/images/raretea.png" alt="rare tea">
+          <div>
+            <h3 class="e-title"><a href="http://www.rareteacompany.com">Rare Tea Company</a></h3>
+            <p>
+              Rare Tea Company is small, independent company based in London.
+            </p>
+            <p>
+              The company was founded in 2004, by Henrietta Lovell (known as the
+              Tea-Lady) to source and supply the world's best tea - direct from
+              farmers and their tea gardens.
+            </p>
+            <p>
+              From humble beginnings with just a handful of devoted customers,
+              they now collaborate with many of the world finest chefs and
+              restaurateurs.
+            </p>
+          </div>
+        </article>
+        <article class="b-supplier">
+          <div>
+            <h3 class="e-title"><a href="http://www.ivyhousefarmdairy.co.uk/">Ivy House Farm</a></h3>
+            <p>
+              Having started farming in the lovely Somerset village of Beckington in the early eighties, they now milk 120 Jersey cows, rear all there calves and aim to grow all the feed for the animals.
+            </p>
+            <p>
+              Everybody in the family is involved in the business from taking orders, milking the cows, packaging products to delivering the milk and cream.
+            </p>
+            <p>
+              Processing all there own milk products has allowed the small farm to survive. By offering this organic jersey milk they are supporting the countryside, its community, the animals and their environment
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="people" class="b-section b-people">
+      <div class="b-content">
+        <h2 class="e-title">People</h2>
+        <article class="b-person">
+          <h3 class="e-name">Shaun Young</h3>
+          <h4 class="e-position">Founder</h4>
+          <p>
+            With experience in Michelin starred restaurants, British gastro pubs and
+            speciality cafe’s both in the UK and Australia, Shaun’s understanding of
+            the hospitality industry is extensive.
+          </p>
+          <p>
+            Through a culmination of knowledge, capability and three years dedication
+            Shaun became the UK Aeropress Champion in 2012, going on to represent the
+            UK at the World AeropressChampionships in Portland, Oregon. Shaun is the
+            current Head Barista of Kaffeine, one of the UK’s leading artisan cafes.
+          </p>
+        </article>
+        <article class="b-person">
+          <h3 class="e-name">Blazej Stempin</h3>
+          <h4 class="e-position">Barista</h4>
+          <p>
+            Polish born Blazej is the most highly skilled barista that we have the
+            pleasure of working with Passion, combined with an unparalleled knowledge
+            of specialty coffee, has resulted in numerous awards throughout his 6
+            years in the industry, including: Polish Cup Tasters Champion 2011 and
+            Polish Brewers Champion 2012.
+          </p>
+        </article>
+        <article class="b-person">
+          <h3 class="e-name">Niall Graham</h3>
+          <h4 class="e-position">Barista</h4>
+          <p>
+            Niall has worked across the globe serving up stellar coffees in Australia,
+            London and Edinburgh. Niall's friendly and laid-back rapport with
+            customers paired with his flair as a barista makes him a true asset
+            to the company.
+          </p>
+        </article>
+        <article class="b-person">
+          <h3 class="e-name">Ben Drury</h3>
+          <h4 class="e-position">Barista</h4>
+          <p>
+            With 5 years in the industry, Ben is regarded as one of the UK's best
+            baristas. Starting his career at Coffee Aroma in Lincoln, consistently
+            voted one of the best cafes outside of the capital, Ben quickly
+            progressed in London's cafe scene, and now manages Notes, Trafalgar
+            Square. Taking an interest in wider food and drink culture, Ben's ability,
+            combined with incredibly enthusiastic and welcoming customer service,
+            is the reason he has become a distinguished figure in the industry. 
+          </p>
+        </article>
+        <article class="b-person">
+          <h3 class="e-name">Claire Brice</h3>
+          <h4 class="e-position">Barista</h4>
+          <p>
+            Born in Australia and with 4 years experience in London’s coffee scene,
+            Claire is exceptionally talented behind the espresso machine and has all
+            round expertise in the hospitality industry. Passion and determination
+            combined with a professional approach have enabled Claire to become a
+            great barista.
+          </p>
+        </article>
+        <article class="b-person">
+          <h3 class="e-name">Pete Garcia</h3>
+          <h4 class="e-position">Barista</h4>
+          <p>
+            Splitting his time between barista training, machine maintenance and
+            working as a barista, Peter combines many aspects of the coffee industry
+            into his weekly schedule. Peter made the move from Sydney to London 8
+            years ago, and brought with him many years of experience in the hospitality
+            industry, both customer facing and back of house.  He can now be found
+            pulling shots at Dose Espresso, and working alongside restaurants and
+            cafes, helping to improve their coffee offering.
+          </p>
+        </article>
+      </div>
+    </section>
+  </div>
+  <footer class="b-footer">
+    <p>Copyright &copy; 2013 Beanstalk Coffee. All rights reserved.</p>
+  </footer>
+  <script type="text/javascript">
 
-    <footer>
-      <p>Copyright &copy; 2013 Beanstalk Coffee. All rights reserved.</p>
-    </footer>
-    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38906614-1']);
+    _gaq.push(['_trackPageview']);
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38906614-1']);
-      _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+  </script>
+  <script src="components/jquery/jquery.js"></script>
+  <script src="components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+  <script src="components/es5-shim/es5-shim.js"></script>
+  <script src="components/es5-shim/es5-sham.js"></script>
+  <script src="components/requirejs/require.js"></script>
+  <script>
+    require(
+      [
+        'components/flight/lib/compose',
+        'components/flight/lib/registry',
+        'components/flight/lib/advice',
+        'components/flight/lib/logger',
+        'components/flight/tools/debug/debug'
+      ],
 
-    </script>
-    <script src="components/jquery/jquery.js"></script>
-    <script src="components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-    <script src="components/es5-shim/es5-shim.js"></script>
-    <script src="components/es5-shim/es5-sham.js"></script>
-    <script src="components/requirejs/require.js"></script>
-    <script>
-      require(
-        [
-          'components/flight/lib/compose',
-          'components/flight/lib/registry',
-          'components/flight/lib/advice',
-          'components/flight/lib/logger',
-          'components/flight/tools/debug/debug'
-        ],
-
-        function(compose, registry, advice, withLogging, debug) {
-          debug.enable(true);
-          compose.mixin(registry, [advice.withAdvice, withLogging]);
-          require(['app/page'], function(initialize) {
-            initialize();
-          });
-        }
-      );
-    </script>
-  <div>
+      function(compose, registry, advice, withLogging, debug) {
+        debug.enable(true);
+        compose.mixin(registry, [advice.withAdvice, withLogging]);
+        require(['app/javascript/page'], function(initialize) {
+          initialize();
+        });
+      }
+    );
+  </script>
 </body>
 </html>

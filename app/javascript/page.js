@@ -3,17 +3,20 @@
 define(
 
   [
-    'app/navigation',
-    'app/navigation_scroller'
+    'app/javascript/page_height',
+    'app/javascript/navigation',
+    'app/javascript/navigation_scroller'
   ],
 
   function(
+    PageHeight,
     Navigation,
     NavigationScroller
   ) {
 
     function initialize() {
-      Navigation.attachTo('.nav a');
+      PageHeight.attachTo(document);
+      Navigation.attachTo('.b-nav a');
       NavigationScroller.attachTo(document);
     }
 

@@ -20,7 +20,7 @@ define(
           // this probably bad...
           var position = $(opts.selector).position();
 
-          $.scrollTo({top: position.top - 190, left: 0}, this.attr.scrollTime);
+          $.scrollTo({top: position.top - 50, left: 0}, this.attr.scrollTime);
         };
 
         this.after('initialize', this.init);

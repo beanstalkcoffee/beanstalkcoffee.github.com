@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-weight: 300;
+  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: white; }
+
+.b-body {
+  margin: 0;
+  padding: 0;
+  background: #020202; }
+
+.b-header {
+  padding: 10px 0;
+  width: 100%;
+  opacity: 0.99;
+  box-shadow: #333 0px 1px 2px;
+  position: fixed;
+  z-index: 3;
+  background-color: #FFFFFF;
+  color: #000000; }
+  @media only screen and (max-width: 568px) {
+    .b-header {
+      position: static; } }
+
+.b-nav {
+  width: 100%; }
+  .b-nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+    overflow: hidden;
+    text-align: center; }
+    .b-nav ul li {
+      margin: 5px 0;
+      padding: 0;
+      width: auto;
+      font-size: 90%;
+      display: inline; }
+      .b-nav ul li:before {
+        content: "/"; }
+      .b-nav ul li:first-child:before {
+        content: ""; }
+    .b-nav ul .e-navlink {
+      padding: 5px 10px;
+      font-weight: 300;
+      color: #666;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.b-contact {
+  margin: 20px;
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  list-style: none;
+  font-size: 120%;
+  border: 3px solid #FFFFFF;
+  border-width: 3px 0; }
+  .b-contact li {
+    padding: 0; }
+    .b-contact li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600; }
+
+.section, .b-brand, .b-intro, .b-suppliers, .b-people {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  .section .b-content, .b-brand .b-content, .b-intro .b-content, .b-suppliers .b-content, .b-people .b-content {
+    padding: 0 20px;
+    width: 780px; }
+    @media only screen and (max-width: 568px) {
+      .section .b-content, .b-brand .b-content, .b-intro .b-content, .b-suppliers .b-content, .b-people .b-content {
+        width: 100%; } }
+  .section .e-title, .b-brand .e-title, .b-intro .e-title, .b-suppliers .e-title, .b-people .e-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400; }
+
+.b-brand {
+  padding-top: 150px;
+  height: 800px;
+  background: transparent url(/assets/images/sacks.jpg) no-repeat left -300px;
+  position: relative; }
+  .b-brand h1 {
+    margin: 10px 20px;
+    padding: 0; }
+    .b-brand h1 a {
+      display: block;
+      width: 416px;
+      height: 111px;
+      background: transparent url(/assets/images/logo@2x.png) no-repeat top left;
+      background-size: 302px 77px; }
+      @media (-webkit-min-device-pixel-ratio: 1.3), (-ms-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .b-brand h1 a {
+          background-image: url(/assets/images/logo@2x.png);
+          background-size: 260px 65px; } }
+      .b-brand h1 a span {
+        display: none; }
+
+.b-suppliers {
+  background: transparent url(/assets/images/tea.jpg) no-repeat;
+  color: #000000; }
+  .b-suppliers .b-supplier {
+    padding-top: 20px;
+    overflow: hidden; }
+    .b-suppliers .b-supplier img {
+      margin: 20px;
+      float: right;
+      border-radius: 4px; }
+  .b-suppliers .e-title a {
+    text-decoration: none;
+    color: #000000; }
+
+.b-people .b-person {
+  margin-top: 40px; }
+  .b-people .b-person .e-name {
+    margin: 0;
+    padding: 0;
+    font-weight: 300; }
+  .b-people .b-person .e-position {
+    margin: 0;
+    padding: 0;
+    font-weight: 300; }
+
+.b-footer {
+  padding: 10px 20px;
+  width: 800px; }
+  @media only screen and (max-width: 568px) {
+    .b-footer {
+      width: 100%; } }
+  .b-footer p {
+    margin: 0;
+    font-size: 0.7em; }
+
+.m-left {
+  float: left; }
