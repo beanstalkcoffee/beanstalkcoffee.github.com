@@ -108,6 +108,7 @@ html {
   color: #000000; }
   .b-suppliers .b-supplier {
     padding-top: 20px;
+    max-width: 400px;
     overflow: hidden; }
     .b-suppliers .b-supplier img {
       margin: 20px;
@@ -116,6 +117,8 @@ html {
   .b-suppliers .e-title a {
     text-decoration: none;
     color: #000000; }
+    .b-suppliers .e-title a:hover {
+      text-decoration: underline; }
 
 .b-people .b-person {
   margin-top: 40px; }
@@ -140,3 +143,9 @@ html {
 
 .m-left {
   float: left; }
+
+.m-right {
+  float: right; }
+
+.m-gutter {
+  margin: 20px; }

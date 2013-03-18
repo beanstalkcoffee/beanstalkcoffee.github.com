@@ -197,6 +197,7 @@ html {
   .b-supplier {
     padding-top: $gutter;
 
+    max-width: 400px;
     overflow: hidden;
 
     img {
@@ -210,6 +211,10 @@ html {
   .e-title a {
     text-decoration: none;
     color: #000000;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -253,4 +258,12 @@ html {
 
 .m-left {
   float: left;
+}
+
+.m-right {
+  float: right;
+}
+
+.m-gutter {
+  margin: $gutter;
 }
